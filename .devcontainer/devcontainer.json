@@ -11,10 +11,10 @@
       "backend": "IntelliJ"
     }
   },
-//  features: {
-//    "ghcr.io/devcontainers-contrib/features/kotlin-sdkman:2": {
-//
-//	},
-//  }
+  features: {
+    "ghcr.io/devcontainers-contrib/features/kotlin-sdkman:2": {
+
+	},
+  }
 }
 
