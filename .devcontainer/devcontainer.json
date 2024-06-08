@@ -1,9 +1,20 @@
 // Info https://containers.dev/implementors/json_reference/
 {
-//	name of the dev container
-	"name": "idea-demo",
-//	Or use a Dockerfile here, more info: https://containers.dev/guide/dockerfile
-	"image":  "ymonnier/sdkman-java"
-
+  "name": "minimal_ubuntu",
+  "image": "ubuntu:latest",
+  "onCreateCommand": {
+    "update": "apt update && apt -y upgrade",
+    "installDependencies": "apt install -y git"
+  },
+  "customizations": {
+    "jetbrains": {
+      "backend": "IntelliJ"
+    }
+  },
+//  features: {
+//    "ghcr.io/devcontainers-contrib/features/kotlin-sdkman:2": {
+//
+//	},
+//  }
 }
 
